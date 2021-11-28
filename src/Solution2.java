@@ -1,3 +1,4 @@
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -5,18 +6,14 @@ import java.util.concurrent.TimeUnit;
 
 class Solution2 {
 
-    public int solution(String S, String T) {
+    public int solution(String S, String T) throws ParseException {
         SimpleDateFormat myFormat = new SimpleDateFormat("hh:mm:ss");
         int counter = 0;
-        Date startDate = new Date();
-        Date endDate = new Date();
+        Date startDate;
+        Date endDate;
 
-        try {
-            startDate = myFormat.parse(S);
-            endDate = myFormat.parse(T);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        startDate = myFormat.parse(S);
+        endDate = myFormat.parse(T);
 
         Calendar calendarEnd = Calendar.getInstance();
         calendarEnd.setTime(endDate);
