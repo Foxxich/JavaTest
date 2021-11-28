@@ -1,4 +1,3 @@
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -55,8 +54,4 @@ class Solution2 {
                 .count();
     }
 
-    public static void main(String[] args) {
-        Solution2 solution2 = new Solution2();
-        System.out.println(solution2.solution("22:22:21", "22:22:23"));
-    }
 }

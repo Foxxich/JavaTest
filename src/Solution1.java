@@ -1,6 +1,4 @@
-import java.text.ParseException;
-
-public class Solution {
+public class Solution1 {
 
     public static long countUniqueCharacters(String input) {
         return input.chars()
@@ -38,12 +36,7 @@ public class Solution {
         return counter;
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.solution("aabacbb"));
-    }
-
-    private int solution(String s) {
+    public int solution(String s) {
         if(isAUsedThreeTimes(s)) {
             return -1;
         } else if (countUniqueCharacters(s) == 1 && s.length() >= 2 && s.charAt(0) == 'a') {
