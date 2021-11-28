@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -10,10 +11,13 @@ class Solution3 {
 
         int counter = 0;
         int result = 0;
+        final String DATE_LIMIT = "1995-10-13";
 
         for (String a : arrOfStr) {
             String date = a.substring(0,10);
-            if(Integer.parseInt(date.substring(0,4)) < 1995) {
+            LocalDate chosenDate = LocalDate.parse(date);
+            LocalDate historyDate = LocalDate.parse(DATE_LIMIT);
+            if(chosenDate.isBefore(historyDate)) {
                 Pattern pattern = Pattern.compile("\\w+");
                 Matcher matcher = pattern.matcher(a);
                 while (matcher.find()) {

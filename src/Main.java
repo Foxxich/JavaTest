@@ -1,12 +1,18 @@
+import java.text.ParseException;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
+
+        System.out.println("Task 1");
         Solution1 solution1 = new Solution1();
         System.out.println(solution1.solution("aabacbb"));
 
+        System.out.println("Task 2");
         Solution2 solution2 = new Solution2();
         System.out.println(solution2.solution("22:22:21", "22:22:23"));
 
+        System.out.println("Task 3");
         Solution3 solution3 = new Solution3();
         System.out.println(solution3.solution3(("1988-08-29        956 system.zip\n" +
                 "1976-09-16     126976 old-photos.tgz\n" +
