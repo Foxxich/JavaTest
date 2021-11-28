@@ -45,10 +45,15 @@ public class Solution1 {
             return s.length() * 2 + 2;
         } else {
             int a = countLetterA(s);
-            int result = s.length() - a - a/2;
-            result *= 2;
+            int result;
             if(a % 2 == 1) {
+                result = s.length() - a - a/2;
+                result *= 2;
                 result += 1;
+            } else {
+                result = s.length() - a - a/2;
+                result *= 2;
+                result += 2;
             }
             return result;
         }

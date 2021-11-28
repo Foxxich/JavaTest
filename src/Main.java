@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Task 1");
         Solution1 solution1 = new Solution1();
-        System.out.println(solution1.solution("aabacbb"));
+        System.out.println(solution1.solution("aabaacaabb"));
 
         System.out.println("Task 2");
         Solution2 solution2 = new Solution2();
