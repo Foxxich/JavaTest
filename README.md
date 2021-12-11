@@ -1,4 +1,4 @@
-# Solutions for Java test H1
+# Solutions for Java test
 ## 1 task
 ![1 Task details](https://github.com/Foxxich/JavaTest/blob/master/images/task1.png)
 ## 2 task
