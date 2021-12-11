@@ -41,7 +41,7 @@ public class Solution1 {
             return -1;
         } else if (countUniqueCharacters(s) == 1 && s.length() >= 2 && s.charAt(0) == 'a') {
             return 0;
-        } else if(s.length() == countLettersExceptA(s)) {
+        } else if (s.length() == countLettersExceptA(s)) {
             return s.length() * 2 + 2;
         } else {
             int a = countLetterA(s);
